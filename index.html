@@ -1,13 +1,66 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sac1</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuporteAnalista.Com - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Lado Esquerdo -->
+    <div class="left-panel">
+      <div class="logo">
+        <div class="circle">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <h1>SuporteAnalista.Com</h1>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <h3>🔒 Seguro</h3>
+          <p>Seus dados protegidos com criptografia avançada.</p>
+        </div>
+        <div class="feature">
+          <h3⚡ Rápido</h3>
+          <p>Acesso rápido e desempenho otimizado.</p>
+        </div>
+        <div class="feature">
+          <h3>💬 Suporte</h3>
+          <p>Suporte dedicado sempre que você precisar.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lado Direito -->
+    <div class="right-panel">
+      <h2>Bem-vindo!</h2>
+      <p>Faça login para acessar o sistema SuporteAnalista.Com</p>
+      <form id="loginForm">
+        <label for="user">Usuário ou e-mail</label>
+        <input type="text" id="user" required>
+
+        <label for="password">Senha</label>
+        <input type="password" id="password" required>
+
+        <div class="options">
+          <label><input type="checkbox" id="remember"> Lembrar-me</label>
+          <a href="#">Esqueci minha senha</a>
+        </div>
+
+        <button type="submit" class="btn">Entrar</button>
+
+        <div class="social-login">
+          <button type="button" class="google">Continuar com Google</button>
+          <button type="button" class="microsoft">Continuar com Microsoft</button>
+        </div>
+
+        <p class="register">Não tem uma conta? <a href="#">Cadastre-se</a></p>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
